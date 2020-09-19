@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>For National  </title>
+        <style>
+            body{
+                background-color: grey;
+            }
+            a{
+            float : right;
+            list-style-type: none;
+            text-decoration :none;
+            color:red;
+            padding: 5px 20px;
+            border: 2px solid lightgreen;
+            background-color: lightblue;
+            margin:5px;
+            }
+            a:hover{
+            background-color:lightpink;
+            color:yellow;
+            }
+            .form{
+            position:absolute;
+            top:55%;
+            left:20%;
+            transform: translate(-50%, -50%); 
+            color:wheat;
+            }
+           td input{
+                background-color: lightcyan;
+                color:black;
+                width:100%;
+                margin:15px;
+                border:none;
+                border-bottom: 1px solid peru;
+                padding:10px;
+            }
+            select{
+                font-size: 16px;
+                padding:5ox;
+                background:#e0d3e8;
+            }
+            .button1{
+                position:absolute;
+                top:90%;
+                right:-100%;
+                background-color: bisque;
+                padding-left:16px;
+                padding-right: 16px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .button2{
+                position:absolute;
+                top:90%;
+                right:-150%;
+                background-color: bisque;
+                padding-left:16px;
+                padding-right: 16px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <a href="../home.html">Home</a>
+        <a  href="../pages/national.html">National</a>
+        <a href="../pages/international.html">International</a>
+        
+        <h1 style="position: absolute;top:5%;left:35%;">Application form for Nationals</h1>
+        <div class="form">
+            <form  onsubmit="check_entry()" >
+                <h2 style="color:blue"><b>Personal Details</b></h2>
+               <table>
+                   <tr>
+                <td><b>Name:</b></td>
+                <td><input  type="text" name="name"/></td>
+                </tr>
+               <tr> 
+                   <td><b>E-mail:</b></td>
+                <td><input type="text" name="email"/></td>
+               </tr>
+               <tr>
+               <td><b>Country:</b></td>
+                <td><input type="text" name="country"/></td>
+               </tr>
+               
+                </table>
+                <h3 style="color:white">Gender:</h3>
+                <input type="radio" name="gender" value="male" checked>Male<br>
+                <input type="radio" name="gender" value="female" checked>Female<br>
+                <input type="radio" name="gender" value="other" checked>Others<br>
+
+                <br><h3 style="color:rgb(241, 245, 238)">Date of Birth</h3><br>
+               <input type="date" id = "birthday" name="bithday">
+                <br>
+                <h3><b style="color:white">Contact Details</b></h3>
+                <table>
+                    <tr>
+                 <td><b>Phone number:</b></td>
+                 <td><input  type="number" name="phonenumber"/></td>
+                 </tr>
+                <tr> 
+                    <td><b>Passport Number</b></td>
+                 <td><input type="number" name="passport number"/></td>
+                </tr>
+                
+            </table>
+
+            </form>
+            <button class="button2">Save & Continue</button>
+            
+    </body>
+</html>
